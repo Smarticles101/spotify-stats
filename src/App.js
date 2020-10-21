@@ -135,7 +135,7 @@ const Song = ({ song }) => {
   let artist = song.artists.map(artist => artist.name).join(", ");
   return (
     <div className="Song">
-      <img src={img.url} height={img.height} width={img.width} />
+      <img src={img.url} height={img.height} width={img.width} alt="Album Cover" />
       <div className="SongDesc">
         <div className="SongName">{song.name}</div>
         <div className="SongArtist">{artist}</div>
@@ -149,7 +149,7 @@ const Artist = ({ artist }) => {
 
   return (
     <div className="Song">
-      {img && <img src={img.url} height={64} width={64} />}
+      {img && <img src={img.url} height={64} width={64} alt="Artist" />}
       <div className="SongDesc">
         <div className="SongName">{artist.name}</div>
       </div>
